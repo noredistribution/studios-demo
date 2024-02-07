@@ -45,17 +45,19 @@ def main(args):
             config = yaml.load(f, Loader=yaml.loader.SafeLoader)
 
         # Convert the YAML configuration to Interface Configuration studio inputs.
-        total_intfs = 0
-        inputs = config['inputs']
 
+        inputs = config['inputs'][0]
 
         # Create a workspace.
         #workspace_name = f'Configure {total_intfs} interface(s) across {len(config)} device(s)'
-        workspace_name = uuid.uuid4()
-        workspace_id = create_workspace(channel, workspace_name)
+        workspace_name = str(uuid.uuid4())
+        if args.wsid:
+            workspace_id = args.wsid
+        else:
+            workspace_id = create_workspace(channel, workspace_name)
 
         # Update the interface config studio.
-        update_intf_config_studio(channel, workspace_id, json.dumps(inputs), "all", config['path']['values'])
+        update_intf_config_studio(channel, workspace_id, json.dumps(inputs), "*", config['path']['values'])
 
         # Build the workspace.
         if not build_workspace(channel, workspace_id):
@@ -378,5 +380,7 @@ if __name__ == '__main__':
                         help="YAML file containing interface configurations per device")
     parser.add_argument("--build-only", type=bool, default=False,
                         help="whether to stop after building the changes (no submission)")
+    parser.add_argument("--wsid", type=str, default=False,
+                        help="existing wsid")
     args = parser.parse_args()
     main(args)
