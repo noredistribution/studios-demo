@@ -1,0 +1,30 @@
+---
+path:
+  values:
+  - "sites"
+  - "1"
+  - "inputs"
+  - "sitesGroup"
+  - "devices"
+  - "0"
+  - "inputs"
+  - "devicesGroup"
+  - "interfaceRanges"
+  - "12"
+inputs:
+  - accessVlan: null
+    channelGroup: null
+    description: testTP125412512512512
+    enabled: true
+    esi: null
+    interfaceName: e1-4
+    ipPrefix: null
+    ipv6Prefix: null
+    lacpEnabled: null
+    memberNumberCollection:
+      - '1'
+    mlagEnabled: null
+    portChannelDescription: null
+    profileOfProfileName: Trunk
+    speed: null
+    vrf: null
