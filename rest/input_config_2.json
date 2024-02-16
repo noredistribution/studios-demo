@@ -1,0 +1,23 @@
+[
+    {
+        "key": {
+            "studioId": "bf40ee48-7fa0-4347-a7b4-5a8d794943e7",
+            "workspaceId": "APIDEMO1000",
+            "path": {
+                "values": [
+                    "sites",
+                    "1",
+                    "inputs",
+                    "sitesGroup",
+                    "devices",
+                    "0",
+                    "inputs",
+                    "devicesGroup",
+                    "interfaceRanges",
+                    "12"
+                ]
+            }
+        },
+        "inputs": "{\"accessVlan\":null,\"channelGroup\":null,\"description\":\"PTTT123412\",\"enabled\":true,\"esi\":null,\"interfaceName\":\"e1-4\",\"ipPrefix\":null,\"ipv6Prefix\":null,\"lacpEnabled\":null,\"memberNumberCollection\":[\"1\"],\"mlagEnabled\":null,\"portChannelDescription\":null,\"profileOfProfileName\":\"Trunk\",\"speed\":null,\"vrf\":null}"
+    }
+]

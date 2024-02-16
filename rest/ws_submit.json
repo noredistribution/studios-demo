@@ -1,0 +1,11 @@
+{
+    "key": {
+        "workspaceId": "APIDEMO1000"
+    },
+    "displayName": "API demo",
+    "description": "API demo",
+    "request": "REQUEST_SUBMIT",
+    "requestParams": {
+        "requestId": "1234"
+    }
+}

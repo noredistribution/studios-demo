@@ -1,0 +1,23 @@
+[
+    {
+        "key": {
+            "studioId": "bf40ee48-7fa0-4347-a7b4-5a8d794943e7",
+            "workspaceId": "APIDEMO1000",
+            "path": {
+                "values": [
+                    "sites",
+                    "1",
+                    "inputs",
+                    "sitesGroup",
+                    "devices",
+                    "0",
+                    "inputs",
+                    "devicesGroup",
+                    "interfaceRanges",
+                    "8"
+                ]
+            }
+        },
+        "inputs": "{\"accessVlan\":null,\"channelGroup\":null,\"description\":\"Underlay-Leafs\",\"enabled\":true,\"interfaceName\":\"e1-e4\",\"ipPrefix\":null,\"ipv6Prefix\":null,\"lacpEnabled\":null,\"memberNumberCollection\":[\"2\",\"3\",\"4\",\"5\",\"6\"],\"mlagEnabled\":null,\"profileOfProfileName\":\"Link-Tracking+PIM\",\"speed\":null,\"vrf\":null}"
+    }
+]
