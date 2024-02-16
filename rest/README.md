@@ -42,6 +42,8 @@ curl -L -X POST "https://cvp1/api/resources/workspace/v1/WorkspaceConfig" -H "Co
 curl -L -X POST "https://cvp1/api/resources/workspace/v1/WorkspaceConfig" -H "Content-Type: application/json" -H "Authorization: Bearer `cat token.tok`" -d @ws_submit.json
 ```
 
+> LPT: For setting partial inputs always take a look at the full inputs and work your way down until the specific key you want to update.
+
 ## Postman examples
 
 The easiest way to test and use resource APIs with Postman is to import the swagger files into Postman Collections
