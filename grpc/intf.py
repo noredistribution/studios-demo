@@ -9,6 +9,7 @@ import grpc
 import uuid
 import yaml
 import json
+import time
 
 from arista.workspace.v1 import models as workspace_models
 from arista.workspace.v1 import services as workspace_services
@@ -46,7 +47,13 @@ def main(args):
 
         # Convert the YAML configuration to Interface Configuration studio inputs.
 
-        inputs = config['inputs'][0]
+        if isinstance(config['inputs'], list):
+            inputs = config['inputs'][0]
+            path = config['path']['values']
+        else:
+            inputs = config['inputs']
+            path = config['path']
+        time.sleep(1)
 
         # Create a workspace.
         #workspace_name = f'Configure {total_intfs} interface(s) across {len(config)} device(s)'
@@ -57,7 +64,7 @@ def main(args):
             workspace_id = create_workspace(channel, workspace_name)
 
         # Update the interface config studio.
-        update_intf_config_studio(channel, workspace_id, json.dumps(inputs), "*", config['path']['values'])
+        update_intf_config_studio(channel, workspace_id, json.dumps(inputs), "*", path)
 
         # Build the workspace.
         if not build_workspace(channel, workspace_id):
