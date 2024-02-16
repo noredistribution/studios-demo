@@ -1,0 +1,32 @@
+---
+path:
+  values:
+  - "sites"
+  - "1"
+  - "inputs"
+  - "sitesGroup"
+  - "devices"
+  - "0"
+  - "inputs"
+  - "devicesGroup"
+  - "interfaceRanges"
+  - "8"
+inputs:
+  - accessVlan: null
+    channelGroup: null
+    description: PIM-Leafs
+    enabled: true
+    interfaceName: e1-4
+    ipPrefix: null
+    ipv6Prefix: null
+    lacpEnabled: null
+    memberNumberCollection:
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+    mlagEnabled: null
+    profileOfProfileName: PIM
+    speed: null
+    vrf: null
