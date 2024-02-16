@@ -1,0 +1,17 @@
+[
+    {
+        "key": {
+            "studioId": "studio-evpn-services",
+            "workspaceId": "APIDEMO1000",
+            "path": {
+                "values": [
+                    "tenants",
+                    "0",
+                    "vlans",
+                    "10"
+                ]
+            }
+        },
+        "inputs": "{\"arp\":{},\"dhcpServerDetails\":[],\"eTreeDetails\":{},\"eTreeRootSwitches\":[],\"eosCli\":[],\"evpnMulticast\":{},\"l3OrL2\":true,\"mtu\":9214,\"name\":\"fiftyfour\",\"nodes\":[],\"overrideVariables\":{},\"sviIpAddresses\":{\"sviVirtualIpAddress\":\"172.16.55.1/24\",\"virtualAddressConfigType\":true},\"switches\":[{\"inputs\":{\"switch\":{\"hostname\":[]}},\"tags\":{\"query\":\"DC:NY\"}}],\"vlanId\":55,\"vrf\":null,\"vxlan\":true}"
+    }
+]
