@@ -55,4 +55,24 @@ For studios the 4 main collections used are:
 - [studio.v1](https://github.com/aristanetworks/cloudvision-apis/blob/trunk/arista/studio.v1/services.gen.swagger.json)
 - [changecontrol.v1](https://github.com/aristanetworks/cloudvision-apis/blob/trunk/arista/changecontrol.v1/services.gen.swagger.json)
 
-TODO <add examples>
+### Example
+
+`POST /api/resources/workspace/v1/WorkspaceConfig`
+
+![create_workspace](./media/create_ws.png)
+
+`GET /api/resources/studio/v1/Inputs?key.studioId={{studioId}}&key.workspaceId=&key.path.values={{value1}}&key.path.values={{value2}}`
+
+![get_partial_inputs](./media/get_partial_inputs.png)
+
+`POST /api/resources/studio/v1/InputsConfig/some`
+
+![set_partial_inputs](./media/set_partial_inputs.png)
+
+`POST /api/resources/workspace/v1/WorkspaceConfig`
+
+![build_ws](./media/build_ws.png)
+
+`POST /api/resources/workspace/v1/WorkspaceConfig`
+
+![submit_Ws](./media/submit_ws.png)
