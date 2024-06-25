@@ -19,15 +19,15 @@ curl -L -X GET "https://cvp1/api/resources/studio/v1/Inputs?key.studioId=bf40ee4
 ### Set new inputs
 
 ```shell
-curl -L -X POST "https://cvp1/api/resources/studio/v1/InputsConfig/some" -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.`cat token.tok`" -d @input_config_1.json
+curl -L -X POST "https://cvp1/api/resources/studio/v1/InputsConfig/some" -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer `cat token.tok`" -d @input_config_1.json
 ```
 
 ```shell
-curl -L -X POST "https://cvp1/api/resources/studio/v1/InputsConfig/some" -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.`cat token.tok`" -d @input_config_2.json
+curl -L -X POST "https://cvp1/api/resources/studio/v1/InputsConfig/some" -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer `cat token.tok`" -d @input_config_2.json
 ```
 
 ```shell
-curl -L -X POST "https://cvp1/api/resources/studio/v1/InputsConfig/some" -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.`cat token.tok`" -d @evpn_partial.json
+curl -L -X POST "https://cvp1/api/resources/studio/v1/InputsConfig/some" -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer `cat token.tok`" -d @evpn_partial.json
 ```
 
 ### Start Build for the workspace

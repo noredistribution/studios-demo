@@ -1,5 +1,3 @@
 actcvp.crt
-*.crt
-*.key
-*.tok
+token
 .DS_Store
