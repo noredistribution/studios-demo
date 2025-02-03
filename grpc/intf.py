@@ -371,7 +371,7 @@ if __name__ == '__main__':
         "Configure interfaces on devices using a YAML file which populates and"
         "submits the built-in Interface Configuration studio.\n"
         "Example:\n"
-        "python3 intf_config.py --server 10.83.12.79:8443 --token-file token.txt"
+        "python3 intf_config.py --server 192.0.2.79:443 --token-file token.txt"
         "--cert-file cvp.crt --config-file=intf_config.yaml"
     )
     parser = argparse.ArgumentParser(
